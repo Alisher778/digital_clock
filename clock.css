@@ -1,0 +1,43 @@
+body{
+  background-color: #070909;
+
+}
+div{
+  width: 480px;
+  height: 200px;
+  margin: 270px auto;
+  position: relative;
+  text-align: center;
+  border: 13px solid #0aeaea;
+  overflow: all;
+  border-radius: 8`1cpx;
+}
+h1{
+  color: #0aeaea;
+  font-family: 'digital';
+  font-size: 97px;
+  font-weight: bold;
+  text-shadow: 1px 1px 69px #a8f5ee;
+  position: relative;
+  top: -15px;
+}
+h1 span{
+  font-size: large;
+}
+h1 sup{
+  font-size: small;
+  position: relative;
+  top: -20px;
+  left: 15px;
+}
+p{
+  color: #0aeaea;
+  text-transform: uppercase;
+  margin-top: -55px;
+  font-weight: bold;
+  text-shadow: 2px 2px 69px #a8f5ee;
+}
+@font-face{
+  font-family: 'digital';
+  src: url(digital-7/digital-7.ttf);
+}

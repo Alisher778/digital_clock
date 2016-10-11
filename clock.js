@@ -20,9 +20,19 @@ function timeRun(){
    if (mil<100){ mil = "0"+mil; }
    if (mil==1000){ mil = 000; }
 
-   var full = h+':'+m+':'+s+':'+mil+diem;//displaying full time
+   var full = h+':'+m+':'+s+"<sup>"+mil+"</sup>"+"<span>"+diem+"</span>";//displaying full time
    var display = document.getElementById('clock');
    display.innerHTML = full;
    setTimeout(timeRun, 100);
 }
 timeRun();
+function dayToday(){
+  var today = new Date();
+  var todaysDay = today.getDay();
+  var daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  var content = document.getElementById('content');
+  var p = document.createElement('p');
+  content.appendChild(p);
+  p.innerHTML = (daysOfWeek[todaysDay]);
+}
+dayToday();
